@@ -1,0 +1,28 @@
+{
+  "name": "backend_cur2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "v12.13.0"
+  },
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mongoose": "^5.11.13",
+    "mongoose-unique-validator": "^2.0.3",
+    "moongoose": "0.0.5",
+    "nodemailer": "^6.7.2",
+    "nodemon": "^2.0.7",
+    "underscore": "^1.12.0"
+  }
+}
