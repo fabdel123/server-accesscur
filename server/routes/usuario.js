@@ -25,7 +25,7 @@ app.post('/qr_data', function (req, res) {
 
             var historico = new Historico({
 
-                creado: getTime(),
+                creado: Date.now(),
                 id_user: body.id_user,
                 id_admin: body.user_id,
                 names_user: body.nombres,
