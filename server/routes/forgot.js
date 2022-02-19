@@ -11,8 +11,6 @@ app.post('/forgot-password', function (req, res) {
     var correo = body.email
     var token = Math.floor(Math.random() * 10001)
 
-
-
     Usuario.findOne({ email: body.email }, (err, usuarioDB) => {
 
         if (err) {
@@ -23,14 +21,13 @@ app.post('/forgot-password', function (req, res) {
         }
 
         if (!usuarioDB) {
-            return res.status(400).json({
+            return res.status(200).json({
                 ok: false,
                 err: {
-                    message: 'Usuario incorrecto'
+                    message: 'Correo electronico de usuario no encontrado'
                 }
             });
         }
-
 
         async function main() {
 
