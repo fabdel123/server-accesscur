@@ -21,7 +21,7 @@ app.post('/forgot-password', function (req, res) {
         }
 
         if (!usuarioDB) {
-            return res.status(200).json({
+            return res.status(400).json({
                 ok: false,
                 err: {
                     message: 'Correo electronico de usuario no encontrado'
